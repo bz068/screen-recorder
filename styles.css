@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    background-color: #3f4045;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    height: 7vh;
+}
+
+.header h2 {
+    font-size: 2rem;
+}
+
+.recorder-wrapper, .recorded-video-wrapper {
+    background-color: #02111b;
+    height: 92vh;
+}
+
+video {
+    height: 90%;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    padding: 1rem;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 0.4rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+        circle,
+        rgba(238, 174, 202, 1) 0%,
+        rgba(148, 187, 233, 1) 100%
+    );
+    border-radius: 6px;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
+
+.buttons button:nth-child(1) {
+    margin-right: 1rem;
+}
+
+.recorded-video-wrapper {
+    height: 99vh;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.countdown {
+    width: 250px;
+    height: 250px;
+    background-color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
